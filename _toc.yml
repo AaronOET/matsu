@@ -4,6 +4,13 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
+- file: items
+  sections:
+    - file: task1_monitoring
+    - file: task2_modelling
+    - file: task3_dashboard
+    - file: task4_education
+# - file: markdown
+# - file: notebooks
+- file: about
 - file: markdown-notebooks
