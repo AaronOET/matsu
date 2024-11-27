@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9781d28e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=fa12dbb9" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -175,11 +175,9 @@
 <li class="toctree-l2"><a class="reference internal" href="task1_monitoring.html">環境監測系統建置</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">海洋水動力模擬</a></li>
 <li class="toctree-l2"><a class="reference internal" href="task3_dashboard.html">資訊整合平台建置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="task4_education.html">教學與推廣</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">執行團隊</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -297,7 +295,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -313,6 +313,15 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 數值模型建置與分析</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 模擬結果應用</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -324,16 +333,39 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>海洋水動力模擬<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p><strong>1. 數值模型建置與分析</strong></p>
+<section id="id2">
+<h2>1. 數值模型建置與分析<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>以開源軟體XBeach、Delft3D、POM和FUNWAVE等模式，結合上述之測量結果進行模擬。在建立馬祖地區海流模擬的部分，我們將先用普林斯頓海洋數值模式(Princeton Ocean Model)建立大範圍結果(如圖7)，並規劃多層海洋模式，逐步縮小範圍，較大範圍模式之結果可以做為馬祖區域小範圍水動力分析之邊界條件，以獲取更高精確度之結果。</p>
+</div></blockquote>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/POM.jpg"><img alt="Weather Station" src="_images/POM.jpg" style="width: 550px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">大範圍POM模擬結果</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<blockquote>
+<div><p>進一步，我們使用 XBeach 模式進行馬祖地區海浪模擬，以獲取馬祖地區波浪特性，以瞭解海浪對海岸沿線之影響。</p>
+</div></blockquote>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/Beigan_topo.jpg"><img alt="Weather Station" src="_images/Beigan_topo.jpg" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">XBeach模式地形製作</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/Beigan_waves.gif"><img alt="Weather Station" src="_images/Beigan_waves.gif" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">XBeach波浪模擬結果</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id3">
+<h2>2. 模擬結果應用<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>採用 XBeach、Delft3D 等開源及商用軟體，模擬潮汐、波浪及水流分布。</p></li>
-<li><p>建立多層次模擬模型，從大範圍模擬結果推導出高精度的區域模擬。</p></li>
+<li><p>TBD</p></li>
 </ul>
-<p><strong>2. 模擬結果應用</strong></p>
-<ul class="simple">
-<li><p>分析機場擴建及大橋建設對海域環境的影響，提供規劃與決策依據。</p></li>
-<li><p>結合監測數據，驗證模擬準確性，確保結果的科學性與可靠性。</p></li>
-</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -390,6 +422,23 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 數值模型建置與分析</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 模擬結果應用</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -2,8 +2,16 @@ h1 {
     font-size: 2em;
 }
 h2 {
-    font-size: 1.6em;
+    margin: 1rem !important;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    font-size: 1.5em;
+    line-height: 1.2rem;
 }
 h3 {
-    font-size: 1.6em;
+    margin: 1rem !important;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    font-size: 1.3em;
+    line-height: 1.2rem;
 }

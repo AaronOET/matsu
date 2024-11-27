@@ -1,8 +1,32 @@
 # 海洋水動力模擬
-**1. 數值模型建置與分析**
-   - 採用 XBeach、Delft3D 等開源及商用軟體，模擬潮汐、波浪及水流分布。
-   - 建立多層次模擬模型，從大範圍模擬結果推導出高精度的區域模擬。
+## 1. 數值模型建置與分析
+> 以開源軟體XBeach、Delft3D、POM和FUNWAVE等模式，結合上述之測量結果進行模擬。在建立馬祖地區海流模擬的部分，我們將先用普林斯頓海洋數值模式(Princeton Ocean Model)建立大範圍結果(如圖7)，並規劃多層海洋模式，逐步縮小範圍，較大範圍模式之結果可以做為馬祖區域小範圍水動力分析之邊界條件，以獲取更高精確度之結果。
 
-**2. 模擬結果應用**
-   - 分析機場擴建及大橋建設對海域環境的影響，提供規劃與決策依據。
-   - 結合監測數據，驗證模擬準確性，確保結果的科學性與可靠性。
+:::{figure} images/POM.jpg
+:alt: Weather Station
+:width: 550px
+:align: center
+
+大範圍POM模擬結果
+:::
+
+> 進一步，我們使用 XBeach 模式進行馬祖地區海浪模擬，以獲取馬祖地區波浪特性，以瞭解海浪對海岸沿線之影響。
+
+:::{figure} images/Beigan_topo.jpg
+:alt: Weather Station
+:width: 450px
+:align: center
+
+XBeach模式地形製作
+:::
+
+:::{figure} images/Beigan_waves.gif
+:alt: Weather Station
+:width: 450px
+:align: center
+
+XBeach波浪模擬結果
+:::
+
+## 2. 模擬結果應用
+   - TBD
