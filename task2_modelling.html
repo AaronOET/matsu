@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=fa12dbb9" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=47a2bdae" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -177,6 +177,8 @@
 <li class="toctree-l2"><a class="reference internal" href="task3_dashboard.html">資訊整合平台建置</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="realtime_weather.html">即時氣象資料</a></li>
+<li class="toctree-l1"><a class="reference internal" href="realtime_cctv.html">CCTV 影像資料庫</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">執行團隊</a></li>
 </ul>
 
@@ -318,8 +320,11 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 數值模型建置與分析</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 模擬結果應用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">模式地形製作</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">風與波浪條件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pom">POM 模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xbeach">XBeach 模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funwave">FUNWAVE</a></li>
 </ul>
             </nav>
         </div>
@@ -333,38 +338,113 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>海洋水動力模擬<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>1. 數值模型建置與分析<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <blockquote>
 <div><p>以開源軟體XBeach、Delft3D、POM和FUNWAVE等模式，結合上述之測量結果進行模擬。在建立馬祖地區海流模擬的部分，我們將先用普林斯頓海洋數值模式(Princeton Ocean Model)建立大範圍結果(如圖7)，並規劃多層海洋模式，逐步縮小範圍，較大範圍模式之結果可以做為馬祖區域小範圍水動力分析之邊界條件，以獲取更高精確度之結果。</p>
 </div></blockquote>
+<section id="id2">
+<h2>模式地形製作<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/POM.jpg"><img alt="Weather Station" src="_images/POM.jpg" style="width: 550px;" /></a>
+<a class="reference internal image-reference" href="_images/Beigan_topo.jpg"><img alt="Weather Station" src="_images/Beigan_topo.jpg" style="height: 380px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">大範圍POM模擬結果</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">XBeach模式陸地地形製作</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<blockquote>
-<div><p>進一步，我們使用 XBeach 模式進行馬祖地區海浪模擬，以獲取馬祖地區波浪特性，以瞭解海浪對海岸沿線之影響。</p>
-</div></blockquote>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="_images/Beigan_topo.jpg"><img alt="Weather Station" src="_images/Beigan_topo.jpg" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="_images/bath.png"><img alt="Weather Station" src="_images/bath.png" style="height: 380px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 17 </span><span class="caption-text">XBeach模式地形製作</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="_images/Beigan_waves.gif"><img alt="Weather Station" src="_images/Beigan_waves.gif" style="width: 450px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 18 </span><span class="caption-text">XBeach波浪模擬結果</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">XBeach模式海底地形製作</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="id3">
-<h2>2. 模擬結果應用<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>TBD</p></li>
-</ul>
+<h2>風與波浪條件<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/rose_all.png"><img alt="Weather Station" src="_images/rose_all.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">東引浮標測站風與波玫瑰圖</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/typhoon_event.jpg"><img alt="Weather Station" src="_images/typhoon_event.jpg" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">2015蘇迪勤颱風波浪觀測(馬祖浮標)</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="pom">
+<h2>POM 模式<a class="headerlink" href="#pom" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/POM.jpg"><img alt="Weather Station" src="_images/POM.jpg" style="width: 550px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">大範圍POM模擬結果</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/POM1.png"><img alt="Weather Station" src="_images/POM1.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">POM模式M2分潮模擬</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/POM2.png"><img alt="Weather Station" src="_images/POM2.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">POM模式S2分潮模擬</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="_images/POM3.png"><img alt="Weather Station" src="_images/POM3.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">POM模式K2分潮模擬</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="_images/POM4.png"><img alt="Weather Station" src="_images/POM4.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">POM模式O2分潮模擬</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="xbeach">
+<h2>XBeach 模式<a class="headerlink" href="#xbeach" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="_images/Beigan_waves_v2.gif"><img alt="Weather Station" src="_images/Beigan_waves_v2.gif" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">XBeach模式模擬馬祖北竿之瞬時水位</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="_images/XBeach1.png"><img alt="Weather Station" src="_images/XBeach1.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">XBeach模式模擬馬祖北竿E向波浪之示性波高與流場</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="_images/XBeach2.png"><img alt="Weather Station" src="_images/XBeach2.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">XBeach模式模擬馬祖北竿ENE向波浪之示性波高與流場</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="funwave">
+<h2>FUNWAVE<a class="headerlink" href="#funwave" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="_images/XBeach3.jpg"><img alt="Weather Station" src="_images/XBeach3.jpg" style="width: 430px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">數值模式FUNWAVE模擬馬祖北竿波浪之瞬時水位</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="_images/XBeach4.png"><img alt="Weather Station" src="_images/XBeach4.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">FUNWAVE模式模擬馬祖北竿波浪之示性波高</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="_images/XBeach5.png"><img alt="Weather Station" src="_images/XBeach5.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">FUNWAVE模式模擬馬祖北竿波浪之流場</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 
@@ -433,8 +513,11 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 數值模型建置與分析</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 模擬結果應用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">模式地形製作</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">風與波浪條件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pom">POM 模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xbeach">XBeach 模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funwave">FUNWAVE</a></li>
 </ul>
   </nav></div>
 
