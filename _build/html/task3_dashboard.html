@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=03fe2ac1" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=47a2bdae" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -65,7 +65,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="執行團隊" href="about.html" />
+    <link rel="next" title="即時氣象資料" href="realtime_weather.html" />
     <link rel="prev" title="海洋水動力模擬" href="task2_modelling.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -177,6 +177,8 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">資訊整合平台建置</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="realtime_weather.html">即時氣象資料</a></li>
+<li class="toctree-l1"><a class="reference internal" href="realtime_cctv.html">CCTV 影像資料庫</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">執行團隊</a></li>
 </ul>
 
@@ -320,8 +322,8 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 平台架構規劃</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 資料展示功能</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">氣象站資料</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">影像資料</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">即時氣象資料</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cctv">CCTV 影像資料</a></li>
 </ul>
 </li>
 </ul>
@@ -343,73 +345,32 @@
 <li><p>建置整合氣象、影像及模擬數據的資料庫，實現多來源數據的統一管理。</p></li>
 <li><p>設計直觀的使用者介面，支持即時數據展示與歷史數據檢索。</p></li>
 </ul>
-<div class="docutils">
-<p>lorem ipsum</p>
-</div>
 </section>
 <section id="id3">
 <h2>2. 資料展示功能<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <section id="id4">
-<h3>氣象站資料<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="_images/01_wind_spd.jpg"><img alt="_images/01_wind_spd.jpg" src="_images/01_wind_spd.jpg" style="width: 600px;" /></a>
+<h3>即時氣象資料<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>氣象站即時資料之介接成果如下圖所示，資訊儀表版可由<a class="reference internal" href="realtime_weather.html"><span class="std std-doc">此連結</span></a>前往檢視實際網頁。</p>
+</div></blockquote>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="_images/weather_dashboard.png"><img alt="_images/weather_dashboard.png" src="_images/weather_dashboard.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 19 </span><span class="caption-text">風速(m/s)</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="_images/02_wind_dir.jpg"><img alt="_images/02_wind_dir.jpg" src="_images/02_wind_dir.jpg" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">風向(°)</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id8">
-<a class="reference internal image-reference" href="_images/03_rainfall.jpg"><img alt="_images/03_rainfall.jpg" src="_images/03_rainfall.jpg" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text">雨量(mm)</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id9">
-<a class="reference internal image-reference" href="_images/04_light.jpg"><img alt="_images/04_light.jpg" src="_images/04_light.jpg" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 22 </span><span class="caption-text">照度(W/m^2)</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id10">
-<a class="reference internal image-reference" href="_images/05_temp.jpg"><img alt="_images/05_temp.jpg" src="_images/05_temp.jpg" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 23 </span><span class="caption-text">溫度(°C)</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id11">
-<a class="reference internal image-reference" href="_images/06_humidity.jpg"><img alt="_images/06_humidity.jpg" src="_images/06_humidity.jpg" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">濕度(%)</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id12">
-<a class="reference internal image-reference" href="_images/07_pressure.jpg"><img alt="_images/07_pressure.jpg" src="_images/07_pressure.jpg" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">壓力(mbar)</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">即時氣象資訊</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>影像資料<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/20240806_A1.mp4"><video src="_images/20240806_A1.mp4" title="_images/20240806_A1.mp4" width="500"><a href="_images/20240806_A1.mp4">_images/20240806_A1.mp4</a></video></a>
+<section id="cctv">
+<h3>CCTV 影像資料<a class="headerlink" href="#cctv" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>北竿板里沙灘 CCTV 影像資料庫介接成果如下圖所示，另可由<a class="reference internal" href="realtime_cctv.html"><span class="std std-doc">此連結</span></a>前往檢視實際網頁。</p>
+</div></blockquote>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="_images/cctv_database.png"><img alt="_images/cctv_database.png" src="_images/cctv_database.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">CCTV影象資料庫</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/20240806_B2.mp4"><video src="_images/20240806_B2.mp4" title="_images/20240806_B2.mp4" width="500"><a href="_images/20240806_B2.mp4">_images/20240806_B2.mp4</a></video></a>
-</figure>
-<!--
-:::{figure} ./videos/20241028_A1.mp4
-:width: 500px
-:::
-
-:::{figure} ./videos/20241028_B2.mp4
-:width: 500px
-::: -->
 </section>
 </section>
 </section>
@@ -454,11 +415,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="about.html"
+       href="realtime_weather.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">執行團隊</p>
+        <p class="prev-next-title">即時氣象資料</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -481,8 +442,8 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 平台架構規劃</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 資料展示功能</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">氣象站資料</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">影像資料</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">即時氣象資料</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cctv">CCTV 影像資料</a></li>
 </ul>
 </li>
 </ul>

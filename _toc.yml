@@ -11,5 +11,7 @@ chapters:
     - file: task3_dashboard
 # - file: markdown
 # - file: notebooks
+- file: realtime_weather
+- file: realtime_cctv
 - file: about
 # - file: markdown-notebooks
