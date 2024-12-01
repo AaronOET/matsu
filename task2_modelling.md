@@ -108,6 +108,14 @@ XBeach模式模擬馬祖北竿ENE向波浪之示性波高與流場
 
 ## FUNWAVE
 
+:::{figure} images/model/Beigan_waves3.gif
+:alt: Weather Station
+:width: 600px
+:align: center
+
+數值模式FUNWAVE模擬馬祖北竿波浪
+:::
+
 :::{figure} images/model/XBeach3.jpg
 :alt: Weather Station
 :width: 430px
