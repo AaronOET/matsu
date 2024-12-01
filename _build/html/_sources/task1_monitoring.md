@@ -1,10 +1,7 @@
 # 環境監測系統建置
 
 ## **1. 簡易氣象站設置**
->
-> 海洋大學馬祖坂里校區簡易氣象測站建置，依既定規劃架構風速、風向、雨量、照度、溫度、濕度及壓力等感測器已完成採購。目前初步完成感測器資料蒐集及傳輸功能測試(113.09.04 13:00~09.10 16:30)。
-
-> 氣象站觀測架設與馬祖校區需考量冬季季風強勁及鹽害，尚須經必要的加固及防蝕處理。目前已完成觀測架材質強化，及觀測架基座加固施工作業中，完成後擇期安裝於北竿坂里校區。
+> 本計畫氣象站建置初期，已充分考量馬祖校區觀測環境條件，冬季季風強勁及鹽害腐蝕等問題，且經必要的觀測架材質強化及測站基座加固施工(如{numref}`Fig %s <fix1>`及{numref}`Fig %s <fix2>`所示)，業已於2024/11/28完成坂里校區氣象測站建置(如{numref}`Fig %s <installed>`)，並即時傳送觀測資訊。
 
 :::{figure} images/w_station.jpg
 :alt: Weather Station
@@ -44,6 +41,7 @@
 |                | 解析度: ±0.1 mbar (±0.003 in Hg)           |
 
 :::{figure} images/w_station2.jpg
+:name: fix1
 :alt: Weather Station
 :height: 350px
 :align: center
@@ -52,6 +50,7 @@
 :::
 
 :::{figure} images/w_station3.jpg
+:name: fix2
 :alt: Weather Station
 :width: 350px
 :align: center
@@ -61,15 +60,16 @@
 
 :::{figure} images/w_station/install_a.jpg
 :alt: Weather Station
-:width: 350px
+:height: 350px
 :align: center
 
 氣象站架設安裝(113/11/28)(1)
 :::
 
 :::{figure} images/w_station/install_h.jpg
+:name: installed
 :alt: Weather Station
-:width: 350px
+:height: 350px
 :align: center
 
 氣象站架設安裝(113/11/28)(2)
