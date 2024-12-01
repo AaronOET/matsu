@@ -8,3 +8,4 @@
 ## 國內海氣象資訊平台
 * [海象環境資訊平台](https://ocean.cwa.gov.tw/V2/)
 * [港灣環境資訊網](https://isohe.ihmt.gov.tw/Frontend/index.aspx)
+* [國家海洋資料庫及共享平台](https://nodass.namr.gov.tw/)
